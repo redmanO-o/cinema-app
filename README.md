@@ -16,7 +16,7 @@ and division into user and admin roles are also implemented.
 
 ### 💫 Features
 
-- 
+- in progress...
 
 ### ▶️ How to run
 - ✅ [Clone](https://github.com/redmanO-o/cinema-app/fork) the project from GitHub
