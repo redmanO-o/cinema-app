@@ -16,7 +16,20 @@ and division into user and admin roles are also implemented.
 
 ### 💫 Features
 
-- in progress...
+- Role-based access control
+
+`USER` role:
+1. Find movies and cinema halls
+1. Find available movie sessions
+1. Create shopping cart
+1. Add tickets to shopping cart
+1. View shopping cart
+1. Make an order
+1. View order history
+
+`ADMIN` role:
+1. Management: `cinema halls`, `movies` and `movie sessions`
+2. Access to users information
 
 ### ▶️ How to run
 - ✅ [Clone](https://github.com/redmanO-o/cinema-app/fork) the project from GitHub
@@ -25,18 +38,18 @@ and division into user and admin roles are also implemented.
 - ✅ Configure Tomcat server (it is recommended to use version
    [9.0.73](https://tomcat.apache.org/download-90.cgi#9.0.73) ❗️)
 - ✅ Use Postman for communication with app
-  - POST /register - register new user (non-auth access);
-  - GET /movie-sessions/available - get list of sessions (user, admin);
-  - GET /cinema-halls - get list of halls (user, admin);
-  - GET /users/by-email - retrieve user's info (admin);
-  - POST: /cinema-halls ,/movies, /movie-sessions - create corresponding objects (admin);
-  - PUT, DELETE /movie-sessions - update and delete movie session (admin);
-  - GET /orders /shopping-carts/by-user - show history of orders, list of tickets in cart (user);
-  - PUT /shopping-carts/movie-sessions - put a ticket on this movie session to the cart (user);
-  - POST /orders/complete - execute order (user);
+  - `POST /register` - register new user (non-auth access);
+  - `GET /movie-sessions/available` - get list of sessions (user, admin);
+  - `GET /cinema-halls` - get list of halls (user, admin);
+  - `GET /users/by-email` - retrieve user's info (admin);
+  - `POST: /cinema-halls ,/movies, /movie-sessions` - create corresponding objects (admin);
+  - `PUT, DELETE /movie-sessions` - update and delete movie session (admin);
+  - `GET /orders /shopping-carts/by-user` - show history of orders, list of tickets in cart (user);
+  - `PUT /shopping-carts/movie-sessions` - put a ticket on this movie session to the cart (user);
+  - `POST /orders/complete` - execute order (user);
 - ✅ Default credentials for access
-  -  login: _admin@i.ua_, password: _admin123_ (admin)
-  -  login: _user@i.ua_, password: _user1234_ (user)
+  -  login: `admin@i.ua`, password: `admin123` (admin)
+  -  login: `user@i.ua`, password: `user1234` (user)
      
 🚀 Login and enjoy the program
 
